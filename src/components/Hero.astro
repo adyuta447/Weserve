@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import HeroImg from '../../public/illustration-hero.png';
 ---
 
 <section class="hero max-w-6xl md:px-8 px-4 mx-auto py-12 xl:px-0">
@@ -65,7 +66,7 @@ import { Image } from "astro:assets";
             </div>
         </div>
         <div class="flex items-center flex-col">
-            <Image src="/illustration-hero.png" width={500} height={550} quality="low" class="h-[397px] md:basis-2/4 lg:h-[550px]" alt="">
+            <Image src={HeroImg} width={500} height={550} quality="low" class="h-[397px] md:basis-2/4 lg:h-[550px]" alt="">
         </div>
     </div>
 </section>

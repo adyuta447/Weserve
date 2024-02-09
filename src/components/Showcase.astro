@@ -1,5 +1,9 @@
 ---
-
+import { Image } from "astro:assets"
+import showcase1 from '../../public/showcase1.png';
+import showcase2 from'../../public/showcase2.png';
+import showcase3 from '../../public/showcase3.png';
+import showcase4 from '../../public/showcase4.png';
 ---
 
 <section class="mx-auto py-12 md:px-8 px-4 xl:px-0">
@@ -17,12 +21,12 @@
             <div class="group relative ">
                 <div
                     class="group-hover:opacity-100 transition-all ease-in-out duration-500 absolute opacity-0 bottom-8 justify-center flex w-full">
-                    <a href="#"
+                    <a href="/"
                         class="transition-all ease-in-out duration-500 shadow-2xl shadow-violet-700 hover:bg-indigo-950 hover:text-white bg-violet-700 px-7 py-3 font-semibold rounded-full text-white text-base">
                         View Details
                     </a>
                 </div>
-                <img src="/showcase1.png" alt=""
+                <Image src={showcase1} width={777} height={660} alt=""
                     class="w-[320px] h-[220px] border-0 group-hover:border-4 border-violet-700 rounded-[16px] transition-all ease-in-out duration-500">
             </div>
             <div class="group relative ">
@@ -33,7 +37,7 @@
                         View Details
                     </a>
                 </div>
-                <img src="/showcase2.png" alt=""
+                <Image src={showcase2} width={777} height={660} alt=""
                     class="w-[320px] h-[220px] border-0 group-hover:border-4 border-violet-700 rounded-[16px] transition-all ease-in-out duration-500">
             </div>
             <div class="group relative ">
@@ -44,7 +48,7 @@
                         View Details
                     </a>
                 </div>
-                <img src="/showcase3.png" alt=""
+                <Image src={showcase3} width={777} height={660} alt=""
                     class="w-[320px] h-[220px] border-0 group-hover:border-4 border-violet-700 rounded-[16px] transition-all ease-in-out duration-500">
             </div>
             <div class="group relative ">
@@ -55,7 +59,7 @@
                         View Details
                     </a>
                 </div>
-                <img src="/showcase4.png" alt=""
+                <Image src={showcase4} width={777} height={660} alt=""
                     class="w-[320px] h-[220px] border-0 group-hover:border-4 border-violet-700 rounded-[16px] transition-all ease-in-out duration-500">
             </div>
         </div>
